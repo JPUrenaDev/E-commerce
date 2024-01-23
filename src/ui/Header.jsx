@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { SearchProductBar } from "./SearchProductBar";
 import { BsShop } from "react-icons/bs";
 import { ShoppingBasketItems } from "./ShoppingBasketItems";
+import { Link } from "react-router-dom";
 const DivHeader = styled.div`
   background-color: #131821;
   width: 100%;
@@ -21,11 +22,14 @@ const Span = styled.span`
 export const Header = () => {
   return (
     <DivHeader>
-      <BsShop color="yellow" size={50} className="ml-4" />
+      <Link to={"/"}>
+        {" "}
+        <BsShop color="yellow" size={40} className="ml-4 cursor-pointer" />{" "}
+      </Link>
       <Span>JeanShop</Span>
       <SearchProductBar />
       <div className="text-white">
-        Hello Guest <span className="font-bold">Sign Ins</span>
+        Hello Guest <span className="font-bold">Sign In</span>
       </div>
       <div className="text-white">Your Shop</div>
       <ShoppingBasketItems />
