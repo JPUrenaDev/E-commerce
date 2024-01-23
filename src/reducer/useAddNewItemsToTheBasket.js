@@ -13,5 +13,9 @@ const reducer = (state, action) => {
     case "addItem": {
       return [...state, action.payload];
     }
+    case "deleteFromBasket": {
+      console.log(action.payload.id);
+      return state.filter((item) => item.id !== action.payload.id);
+    }
   }
 };

@@ -7,8 +7,7 @@ const ItemsObject = [
     Name: "SteelSeries Apex 3 RGB Gaming Keyboard – 10-Zone RGB Illumination – IP32 Water Resistant – Premium Magnetic Wrist Rest (Whisper Quiet Gaming Switch)",
     price: 49.99,
     stars: 4.7,
-    photo:
-      "public/img/SteelSeries-Apex-3-RGB-Gaming-Keyboard-10-Zone-RGB-Illumination-IP32-Water-Resistant-Premium-Magnetic-Wrist-Rest-Whisper-Quiet-Gaming-Switch_545ebb22-d861-4cd7-b352-b58954.webp",
+    photo: "public/img/effc53c323454adb844d9cf442660284.jpeg",
   },
   {
     id: 2,
@@ -16,7 +15,7 @@ const ItemsObject = [
     price: 49.99,
     stars: 4.7,
     photo:
-      "public/img/SteelSeries-Apex-3-RGB-Gaming-Keyboard-10-Zone-RGB-Illumination-IP32-Water-Resistant-Premium-Magnetic-Wrist-Rest-Whisper-Quiet-Gaming-Switch_545ebb22-d861-4cd7-b352-b58954.webp",
+      "public/img/Sony-PlayStation-5-Gaming-Console_02021359-c4bb-410e-940a-12930acbfd57.4d050069b07b687682d48144eb9d9032.webp",
   },
   {
     id: 10,
@@ -31,24 +30,21 @@ const ItemsObject = [
     Name: "SteelSeries Apex 3 RGB Gaming Keyboard – 10-Zone RGB Illumination – IP32 Water Resistant – Premium Magnetic Wrist Rest (Whisper Quiet Gaming Switch)",
     price: 49.99,
     stars: 4.7,
-    photo:
-      "public/img/SteelSeries-Apex-3-RGB-Gaming-Keyboard-10-Zone-RGB-Illumination-IP32-Water-Resistant-Premium-Magnetic-Wrist-Rest-Whisper-Quiet-Gaming-Switch_545ebb22-d861-4cd7-b352-b58954.webp",
+    photo: "public/img/6558601_sd.jpg",
   },
   {
     id: 4,
     Name: "SteelSeries Apex 3 RGB Gaming Keyboard – 10-Zone RGB Illumination – IP32 Water Resistant – Premium Magnetic Wrist Rest (Whisper Quiet Gaming Switch)",
     price: 49.99,
     stars: 4.7,
-    photo:
-      "public/img/SteelSeries-Apex-3-RGB-Gaming-Keyboard-10-Zone-RGB-Illumination-IP32-Water-Resistant-Premium-Magnetic-Wrist-Rest-Whisper-Quiet-Gaming-Switch_545ebb22-d861-4cd7-b352-b58954.webp",
+    photo: "public/img/LD0005526008_2.jpg",
   },
   {
-    id: 4,
+    id: 7,
     Name: "SteelSeries Apex 3 RGB Gaming Keyboard – 10-Zone RGB Illumination – IP32 Water Resistant – Premium Magnetic Wrist Rest (Whisper Quiet Gaming Switch)",
     price: 49.99,
     stars: 4.7,
-    photo:
-      "public/img/SteelSeries-Apex-3-RGB-Gaming-Keyboard-10-Zone-RGB-Illumination-IP32-Water-Resistant-Premium-Magnetic-Wrist-Rest-Whisper-Quiet-Gaming-Switch_545ebb22-d861-4cd7-b352-b58954.webp",
+    photo: "public/img/17012498369036.jpg",
   },
   {
     id: 5,

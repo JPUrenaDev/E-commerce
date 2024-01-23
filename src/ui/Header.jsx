@@ -22,16 +22,19 @@ const Span = styled.span`
 export const Header = () => {
   return (
     <DivHeader>
-      <Link to={"/"}>
+      <Link to={"/items"}>
         {" "}
         <BsShop color="yellow" size={40} className="ml-4 cursor-pointer" />{" "}
       </Link>
       <Span>JeanShop</Span>
       <SearchProductBar />
-      <div className="text-white">
-        Hello Guest <span className="font-bold">Sign In</span>
-      </div>
+      <Link to={"login"}>
+        <div className="text-white">
+          Hello Guest <span className="font-bold">Sign In</span>
+        </div>
+      </Link>
       <div className="text-white">Your Shop</div>
+
       <ShoppingBasketItems />
     </DivHeader>
   );

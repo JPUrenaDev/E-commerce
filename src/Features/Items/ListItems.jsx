@@ -14,7 +14,7 @@ export const ListItems = ({ items }) => {
         <RatingStars />
 
         <img
-          className="w-[300px]  bg-black ml-auto mr-auto"
+          className="w-[300px] h-[240px] bg-black ml-auto mr-auto"
           src={items.photo}
           alt=""
         />
