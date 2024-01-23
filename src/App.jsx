@@ -1,10 +1,13 @@
 import "./App.css";
-import { Home } from "./Pages/Home";
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { NotFoundPage } from "./ui/NotFoundPage";
 import { Checkout } from "./Pages/Checkout";
 import { LoginPage } from "./Features/login/LoginPage";
-
+import { Items } from "./Features/Items/Items";
+import { ProtectedRoute } from "./Routes/ProtectedRoute";
+import { useAddNewItemsToTheBasket } from "./reducer/useAddNewItemsToTheBasket";
+import { MyContext } from "./context/itemsContext";
 const router = createBrowserRouter([
   {
     path: "login",
@@ -13,10 +16,14 @@ const router = createBrowserRouter([
 
   {
     path: "/",
-    element: <Home />,
+    element: <ProtectedRoute />,
     errorElement: <NotFoundPage />,
 
     children: [
+      {
+        path: "items",
+        element: <Items />,
+      },
       {
         path: "checkout",
         element: <Checkout />,
@@ -25,9 +32,12 @@ const router = createBrowserRouter([
   },
 ]);
 function App() {
+  const { state, dispatch } = useAddNewItemsToTheBasket();
   return (
     <>
-      <RouterProvider router={router} />
+      <MyContext.Provider value={{ state, dispatch }}>
+        <RouterProvider router={router} />
+      </MyContext.Provider>
     </>
   );
 }

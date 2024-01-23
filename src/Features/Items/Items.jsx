@@ -1,4 +1,5 @@
-import React from "react";
+import styled from "styled-components";
+import { ListItems } from "./ListItems";
 
 const ItemsObject = [
   {
@@ -7,17 +8,71 @@ const ItemsObject = [
     price: 49.99,
     stars: 4.7,
     photo:
-      "SteelSeries-Apex-3-RGB-Gaming-Keyboard-10-Zone-RGB-Illumination-IP32-Water-Resistant-Premium-Magnetic-Wrist-Rest-Whisper-Quiet-Gaming-Switch_545ebb22-d861-4cd7-b352-b58954.webp",
+      "public/img/SteelSeries-Apex-3-RGB-Gaming-Keyboard-10-Zone-RGB-Illumination-IP32-Water-Resistant-Premium-Magnetic-Wrist-Rest-Whisper-Quiet-Gaming-Switch_545ebb22-d861-4cd7-b352-b58954.webp",
   },
   {
     id: 2,
-    Name: "SEVERIN Microondas con grill y convección 3 en 1, horno microondas con 10 niveles de potencia, microondas digital multifunción con plato giratorio y 2 rejillas, negro, MW 7865",
-    price: 145.36,
-    stars: 4,
+    Name: "SteelSeries Apex 3 RGB Gaming Keyboard – 10-Zone RGB Illumination – IP32 Water Resistant – Premium Magnetic Wrist Rest (Whisper Quiet Gaming Switch)",
+    price: 49.99,
+    stars: 4.7,
     photo:
-      "E-commercepublicimgSteelSeries-Apex-3-RGB-Gaming-Keyboard-10-Zone-RGB-Illumination-IP32-Water-Resistant-Premium-Magnetic-Wrist-Rest-Whisper-Quiet-Gaming-Switch_545ebb22-d861-4cd7-b352-b58954.webp",
+      "public/img/SteelSeries-Apex-3-RGB-Gaming-Keyboard-10-Zone-RGB-Illumination-IP32-Water-Resistant-Premium-Magnetic-Wrist-Rest-Whisper-Quiet-Gaming-Switch_545ebb22-d861-4cd7-b352-b58954.webp",
+  },
+  {
+    id: 10,
+    Name: "SteelSeries Apex 3 RGB Gaming Keyboard – 10-Zone RGB Illumination – IP32 Water Resistant – Premium Magnetic Wrist Rest (Whisper Quiet Gaming Switch)",
+    price: 49.99,
+    stars: 4.7,
+    photo:
+      "public/img/SteelSeries-Apex-3-RGB-Gaming-Keyboard-10-Zone-RGB-Illumination-IP32-Water-Resistant-Premium-Magnetic-Wrist-Rest-Whisper-Quiet-Gaming-Switch_545ebb22-d861-4cd7-b352-b58954.webp",
+  },
+  {
+    id: 23,
+    Name: "SteelSeries Apex 3 RGB Gaming Keyboard – 10-Zone RGB Illumination – IP32 Water Resistant – Premium Magnetic Wrist Rest (Whisper Quiet Gaming Switch)",
+    price: 49.99,
+    stars: 4.7,
+    photo:
+      "public/img/SteelSeries-Apex-3-RGB-Gaming-Keyboard-10-Zone-RGB-Illumination-IP32-Water-Resistant-Premium-Magnetic-Wrist-Rest-Whisper-Quiet-Gaming-Switch_545ebb22-d861-4cd7-b352-b58954.webp",
+  },
+  {
+    id: 4,
+    Name: "SteelSeries Apex 3 RGB Gaming Keyboard – 10-Zone RGB Illumination – IP32 Water Resistant – Premium Magnetic Wrist Rest (Whisper Quiet Gaming Switch)",
+    price: 49.99,
+    stars: 4.7,
+    photo:
+      "public/img/SteelSeries-Apex-3-RGB-Gaming-Keyboard-10-Zone-RGB-Illumination-IP32-Water-Resistant-Premium-Magnetic-Wrist-Rest-Whisper-Quiet-Gaming-Switch_545ebb22-d861-4cd7-b352-b58954.webp",
+  },
+  {
+    id: 4,
+    Name: "SteelSeries Apex 3 RGB Gaming Keyboard – 10-Zone RGB Illumination – IP32 Water Resistant – Premium Magnetic Wrist Rest (Whisper Quiet Gaming Switch)",
+    price: 49.99,
+    stars: 4.7,
+    photo:
+      "public/img/SteelSeries-Apex-3-RGB-Gaming-Keyboard-10-Zone-RGB-Illumination-IP32-Water-Resistant-Premium-Magnetic-Wrist-Rest-Whisper-Quiet-Gaming-Switch_545ebb22-d861-4cd7-b352-b58954.webp",
+  },
+  {
+    id: 5,
+    Name: "SteelSeries Apex 3 RGB Gaming Keyboard – 10-Zone RGB Illumination – IP32 Water Resistant – Premium Magnetic Wrist Rest (Whisper Quiet Gaming Switch)",
+    price: 49.99,
+    stars: 4.7,
+    photo:
+      "public/img/SteelSeries-Apex-3-RGB-Gaming-Keyboard-10-Zone-RGB-Illumination-IP32-Water-Resistant-Premium-Magnetic-Wrist-Rest-Whisper-Quiet-Gaming-Switch_545ebb22-d861-4cd7-b352-b58954.webp",
   },
 ];
+
+const DivItems = styled.div`
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  height: 10px;
+`;
 export const Items = () => {
-  return <div>Items</div>;
+  return (
+    <DivItems>
+      {ItemsObject.map((items, index) => (
+        <ListItems key={index} items={items} />
+      ))}
+    </DivItems>
+  );
 };
